@@ -1,0 +1,85 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primary: #90EE90;
+  --primary-dark: #70CF70;
+  --secondary: #2D3436;
+}
+
+/* Navbar styles */
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-link {
+  color: var(--secondary) !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+.btn-success:hover {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+/* General styles */
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--secondary);
+  background-color: #ffffff;
+  padding-top: 76px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Component styles */
+.hover-shadow {
+  transition: all 0.3s ease;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.form-control {
+  padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.25rem rgba(144, 238, 144, 0.25);
+}
+
+/* Update Section spacing */
+html {
+  scroll-padding-top: 76px;
+}
+
+section {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.section-padding {
+  padding-top: 76px;
+  margin-top: -76px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
